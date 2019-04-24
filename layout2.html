@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Template 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		*{
+			margin: auto;
+			padding: 0;
+			box-sizing: border-box;
+			float: none;
+		}
+		.header{
+			background-color: aqua;
+			padding: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: sans-serif;
+			font-size: 2em;
+		}
+		.column{
+			float: left;
+			font-size: 20px;
+			text-align: center;
+			font-weight: bolder;
+		  	margin: 2px;
+		  	padding: 10px;
+		  	height: 400px;
+		  	background-color: aqua; 
+		}
+		.column.sidebar{
+			width: 24.50%;
+		}
+		.column.content{
+			width: 50%;
+		}
+		.footer{
+			background-color: aqua;
+			padding: 20px;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: sans-serif;
+			font-weight: bolder;
+			font-size: 1em;
+		}
+
+		.clear{clear: both;}
+		@media (max-width: 600px) {
+ 		 .column.sidebar, .column.content, .header, .footer{
+    		width: 100%;
+    		background-color: orange;
+  			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+	  <h2>Header</h2>
+	</div>
+
+	<div class="row">
+	  	<div class="column sidebar ">One</div>
+	  	<div class="column content">Two</div>
+	  	<div class="column sidebar">Three</div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer">
+  		<p>Footer</p>
+	</div>
+
+</body>
+</html>
